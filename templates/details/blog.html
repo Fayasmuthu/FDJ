@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+{% extends "partials/lightall/baseall.html" %}
+{% load static %}
+{% block content %}
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 
 
@@ -289,7 +293,9 @@
                 </div><!-- /.container -->
             </nav>
             <!-- /.main-menu -->
-        </header><!-- /.main-header-two -->
+        </header><!-- /.main-header-two --> {% endcomment %}
+
+
 
         <div class="stricky-header stricked-menu main-menu main-header-two">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -314,7 +320,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-1.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-1.jpg' %}" alt="eduact">
                                         <a href="blog-details-right.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -339,7 +345,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-2.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-2.jpg' %}" alt="eduact">
                                         <a href="blog-details.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -352,7 +358,7 @@
                                         </h3><!-- /.blog-title -->
                                         <div class="blog-two__meta">
                                             <div class="blog-two__meta__author">
-                                                <img src="assets/images/blog/author-1.png" alt="eduact" />
+                                                <img src="{% static 'assets/images/blog/author-1.png' %}" alt="eduact" />
                                                 <a href="blog-list.html">Darrell Steward</a>
                                                 Fronted Developer
                                             </div>
@@ -364,7 +370,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-3.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-3.jpg' %}" alt="eduact">
                                         <a href="blog-details-left.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -377,7 +383,7 @@
                                         </h3><!-- /.blog-title -->
                                         <div class="blog-two__meta">
                                             <div class="blog-two__meta__author">
-                                                <img src="assets/images/blog/author-1.png" alt="eduact" />
+                                                <img src="{% static 'assets/images/blog/author-1.png' %}" alt="eduact" />
                                                 <a href="blog-list-left.html">Darrell Steward</a>
                                                 Fronted Developer
                                             </div>
@@ -389,7 +395,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-4.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-4.jpg' %}" alt="eduact">
                                         <a href="blog-details-right.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -414,7 +420,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-5.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-5.jpg' %}" alt="eduact">
                                         <a href="blog-details.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -439,7 +445,7 @@
                             <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="600ms">
                                 <div class="blog-two__item">
                                     <div class="blog-two__image">
-                                        <img src="assets/images/blog/blog-2-6.jpg" alt="eduact">
+                                        <img src="{% static 'assets/images/blog/blog-2-6.jpg' %}" alt="eduact">
                                         <a href="blog-details-left.html"></a>
                                     </div><!-- /.blog-image -->
                                     <div class="blog-two__content">
@@ -485,7 +491,7 @@
                                 <ul class="sidebar__post__list list-unstyled">
                                     <li>
                                         <div class="sidebar__post__image">
-                                            <img src="assets/images/blog/lp-1-1.jpg" alt="">
+                                            <img src="{% static 'assets/images/blog/lp-1-1.jpg' %}" alt="">
                                         </div>
                                         <div class="sidebar__post__content">
                                             <span class="sidebar__post__content__meta"><i class="icon-clock"></i>26 Mar, 2023</span>
@@ -494,7 +500,7 @@
                                     </li>
                                     <li>
                                         <div class="sidebar__post__image">
-                                            <img src="assets/images/blog/lp-1-2.jpg" alt="">
+                                            <img src="{% static 'assets/images/blog/lp-1-2.jpg' %}" alt="">
                                         </div>
                                         <div class="sidebar__post__content">
                                             <span class="sidebar__post__content__meta"><i class="icon-clock"></i>26 Mar, 2023</span>
@@ -574,8 +580,8 @@
             </div>
         </section>
         <!-- Blog End -->
-
-        <footer class="main-footer-two">
+        {% endblock content %}
+        {% comment %} <footer class="main-footer-two">
             <div class="main-footer-two__bg" style="background-image: url(assets/images/shapes/footer-bg-2.png);"></div>
             <div class="container">
                 <div class="row">
@@ -729,4 +735,4 @@
 
 
 <!-- Mirrored from bracketweb.com/eduact-html/blog-grid-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Sep 2023 10:51:28 GMT -->
-</html>
+</html> {% endcomment %}

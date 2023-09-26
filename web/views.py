@@ -15,10 +15,16 @@ def home_dark(request):
 def blog(request):
     return render(request,("details/blog.html"))
 def product(request):
-    return render(request,("details/product.html"))
+    return render(request,("details/products.html"))
 def team(request):
     return render(request,("details/team.html"))
 def gallery(request):
     return render(request,("details/gallery.html"))
 def contact(request):
     return render(request,("details/contact.html"))
+def about(request):
+    return render(request,("details/about.html"))
+def cause(request):
+    return render(request,("details/cause.html"))
+def donate(request):
+    return render(request,("details/donate.html"))

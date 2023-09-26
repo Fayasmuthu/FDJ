@@ -26,11 +26,14 @@
 .category-one__hover__icon,
 .category-one__icon,
 .home-showcase__title,
+.donate-one__like,
 .course-one__like,
 .course-one__like:hover,
+.donate-one__like:hover,
 .counter-one__left__title,
 .counter-one__left__content,
 .course-one__time,
+.donate-one__time,
 .team-one__title,
 .blog-one__cta__icon,
 .blog-one__cta__title,
@@ -122,6 +125,7 @@
 }
 
 .course-one,
+.donate-one,
 .blog-one__meta,
 .blog-one__cta__email-input-box input[type="email"],
 .course-one__bottom {
@@ -177,3 +181,8 @@
 }
 
 /*# sourceMappingURL=eduact-dark.css.map */
+
+
+.donate-one__thumb {
+  background: linear-gradient(147deg, var(--eduact-black) 0%, rgba(231, 231, 231, 0) 100%);
+}
